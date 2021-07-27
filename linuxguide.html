@@ -104,15 +104,66 @@
 
 		<section>
 			<h2>System Level Software</h2>
-			<a>Dash</a>
-			<a>Doas</a>
-			<a>Mksh</a>
-			<a>Zsh</a>
+			<a><b>Dash</b></a>
+			<p>
+				Dash - Debian Almquist SHell is the Debian port of ash, it's a super lightweight shell that's great for script
+				execution, lacks many basic features for users, i highly recommend you link this to /bin/sh.
+			</p>
+			<p>
+				To check if dash is linked to /bin/sh run <code>ls -l /bin/sh</code> if it says dash your set if not run
+				<code>cat /etc/shells</code> to see if its installed, if not install it with your package manager on Arch
+				<code>pacman -S dash</code> once you have dash installed you can link it with <code>ln -sf dash /bin/sh</code>
+				(linking requires root so run with Sudo/Doas)
+			</p>
+			<a><b>Doas</b></a>
+			<p>
+				Doas allows you to run a command as another user (ie Sudo), Doas is super lightweight compared to it's server
+				oriented counterpart, great for single user pcs.
+			</p>
+			<p>
+				i recommend putting <code>permit persist keepenv YOURUSERNAME as root</code> in your doas.conf, if you want
+				to know what everything does you can find information on the doas.conf online.
+			</p>
+			<p>
+				To run yay without sudo and with doas, you need to make a shell alias, simply add <code>alias yay='yay --sudo doas'</code>
+				to your .kshrc, .bashrc, .mkshrc, or .zshrc
+			</p>
+			<a><b>Mksh</b></a>
+			<p>
+				Mksh - MirBSD Korn Shell, pretty much the most easy to find Korn Shell on linux, extremely lightweight
+				and decently featured for a user shell, though is slower on execution time, recommend using it as your
+				user shell with dash as /bin/sh, below i'll go through showing you how to set your user shell.
+			</p>
+			<a><b>Oksh</b></a>
+			<p>
+				Oksh - OpenBSD Korn Shell, basically the same as the above but better in everyway use it when possible.
+			</p>
+			<a><b>Zsh</a></b>
+			<p>
+				Zsh - Z Shell, is a really advanced User Shell with a ton of features, if you want something that can do
+				everything this is it, it is extremely heavy on memory usage and could be considered bloated.
+			</p>
+			<a><b>Minisection Setting your User Shell</b></a>
+			<p>
+				To change your user shell to whatever you want, find the shell on your system via <code>cat /etc/shells</code>
+				and then set it with <code>usermod --shell /bin/mksh YOURUSERNAME</code> as an example.
+			</p>
+			<a><b>Pacman</b></a>
+			<p>
+				Pacman is the Arch Linux package manager, it's great, this section is to just mention one small config tweak.
+				You can add the <code>ParalellDownloads</code> option to your <code>/etc/pacman.conf</code> to allow parallel
+				downloading, i recommend setting this to your processor threads, for example on my system i added,
+				<code>ParalellDownloads = 6</code> but on a 8 core 16 thread cpu i would do 16.
+			</p>
 		</section>
 
 		<section>
 			<h2>Basic CLI Applications</h2>
+			<a><b>Yay</b></a>
 			<a><b>Midnight Commander</b></a>
+			<a><b>lf</b></a>
+			<a><b>nnn</b></a>
+			<a><b>links2</b></a>
 			<a><b>Lynx</b></a>
 			<a><b>w3m</b></a>
 			<a><b>mutt</b></a>
@@ -123,7 +174,25 @@
 			<a><b>concalc</b></a>
 			<a><b>neofetch</b></a>
 			<a><b>Newsboat</b></a>
+			<a><b>sfeed</b></a>
 			<a><b>MPV</b></a>
+			<a><b>gomuks</b></a>
+			<a><b>sic</b></a>
+			<a><b>btpd</b></a>
+			<a><b>screen</b></a>
+			<a><b>dvtm</b></a>
+			<a><b>adbuco</b></a>
+		</section>
+
+		<section>
+			<h2>CLI Applications for non humans (programs for use in scripts)</h2>
+			<a><b>tiramisu</b></a>
+			<a><b>herbe</b></a>
+			<a href="https://github.com/mptre/pick"><b>pick</b></a>
+			<a href="https://sites.google.com/site/gotmor/"><b>dbar</b></a>
+			<a href="https://z3bra.org/skroll/"><b>skroll</b></a>
+			<a href="https://github.com/mogaal/quvi"><b>quvi</b></a>
+			<a href="https://isync.sourceforge.io/"><b>isync</b></a>
 		</section>
 
 		<section>
@@ -133,6 +202,7 @@
 			<a><b>LibreWolf</b></a>
 			<a><b>Icecat</b></a>
 			<a><b>Degoogled Chromium</b></a>
+			<a><b>Surf</b></a>
 			<a><b>Thunderbird</b></a>
 			<a><b>Pinta</b></a>
 			<a><b>Abiword</b></a>
@@ -155,22 +225,34 @@
 			<a><b>VSCodium</b></a>
 			<a><b>XFBurn</b></a>
 			<a><b>Quickmedia</b></a>
+			<p>
+				Quickmedia is a native, keyboard controlled, app for youtube, a ton of manga sites, 4chan, soundcloud, matrix,
+				and more.
+			</p>
 			<a><b>Nheko</b></a>
 			<a><b>MultiMC</b></a>
 			<a><b>kcalc</b></a>
+			<a><b>kcharselect</b></a>
 		</section>
 
 		<section>
 			<h2>Emulators</h2>
-			<a><b>Wine</b></a>
+			<a><b>dosemu2</b></a>
+			<a><b>doxboxx</b></a>
 			<a><b>WineGE</b></a>
 			<a><b>Anbox</b></a>
+			<a href="https://www.darlinghq.org/"><b>Darling</b></a>
+			<a href="https://vice-emu.sourceforge.io/"><b>vice</b></a>
 			<a><b>PPSSPP</b></a>
 			<a><b>PCSX2</b></a>
 			<a><b>MelonDS</b></a>
 			<a><b>Dolphin</b></a>
 			<a><b>Mupen64Plus</b></a>
 			<a><b>GlideN64</b></a>
+			<a href="https://yabause.org/"><b>Yabause</b></a>
+			<a href="https://reicast.com/"><b>Reicast</b></a>
+			<a href="https://hatari.tuxfamily.org/"><b>hatari</b></a>
+			<a href="https://atari800.github.io/"><b>atari800</b></a>
 			<a><b>Mednafen</b></a>
 			<p>Everything below can be replaced by mednafen, but due to its poor performance with pulse audio it's hard to recommend on linux</p>
 			<a><b>Duckstation</b></a>
