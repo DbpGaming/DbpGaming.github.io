@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>DbpGaming</title>
+<description>DbpGaming's updates</description>
+<language>en-us</language>
+<link>https://dbpgaming.github.io/rss/xml</link>
+<atom:link href="https://dbpgaming.github.io/rss/xml" rel="self" type="application/rss+xml"/>
+
+<item>
+<title>The Fall of Minecraft Modpacks</title>
+<guid>https://dbpgaming.github.io/tfom.html</guid>
+<link>https://dbpgaming.github.io/tfom.html</link>
+</item>
+
+</channel>
+</rss>
