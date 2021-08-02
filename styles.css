@@ -1,0 +1,53 @@
+body {
+	background-color: black;
+}
+
+section {
+	max-width: 50%;
+	margin: auto;
+}
+
+header {
+	background-color: #160016;
+	margin: auto;
+}
+
+p {
+	color: blanchedalmond;
+}
+
+b {
+	color: oldlace;
+}
+
+h1 {
+	color: darkorchid;
+	font-size: 3vw;
+	text-align: center;
+}
+
+h2 {
+	color: cornsilk;
+}
+
+nav {
+	text-align: center;
+	font-size: 2vw;
+}
+
+footer {
+	text-align: center;
+	font-size: 2vw;
+}
+
+img {
+	margin:inherit;
+	display: block;
+	max-width: 100%;
+	height:auto;
+}
+
+.posts{
+	font-size: 3vw;
+	text-align: center;
+}
