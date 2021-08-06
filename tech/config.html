@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>DbpGaming's Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../styles.css">
+	</head>
+
+	<body>
+		<header>
+			<h1>Configuration</h1>
+			<img src="../8.PNG" alt="banner">
+		</header>
+
+		<nav>
+			<a href="../index.html">Index</a>
+			<a href="../minecraft.html">Minecraft</a>
+			<a href="../posts.html">Posts</a>
+		</nav>
+
+		<nav>
+			<a href="tech.html">Tech Index</a>
+			<a href="websites.html">Cool Websites</a>
+			<a href="linuxguide.html">Unix Software</a>
+			<a href="distros.html">Operating Systems</a>
+			<a href="technologies.html">Technologies</a>
+		</nav>
+
+		<section>
+			<h3>Configure Software</h3>
+			<a name="changebinsh"><b>Change /bin/sh</b></a><p>
+				<a href="#checkbinsh">Check your /bin/sh</a> if it says whatever shell you want, it's set.
+				<a href="#checkinstalled">check your installed shells</a>, if not install your shell with your package manager on Arch
+				<code>pacman -S dash</code> as an example of dash on arch, <a href="linkshell">link your shell</a>
+			</p>
+			<a name="checkbinsh"><b>Check your /bin/sh</b></a><p>
+				To check if dash is linked to /bin/sh run <code>ls -l /bin/sh</code>
+			</p>
+			<a name="checkinstalled"><b>Check what shells are Installed</b></a><p>
+				Run <code>cat /etc/shells</code> to see what shells are installed
+			</p>
+			<a name="linkshell"><b>Link shell to /bin/sh</b></a><p>
+				Use <code>ln -sf insertshellbinarynamehere /bin/sh</code> as root
+			</p>
+			<a name="changeshell"><b>Changing your User Shell</b></a><p>
+				To change your user shell to whatever you want, find the shell on your system via <code>cat /etc/shells</code>
+				and then set it with <code>usermod --shell /bin/mksh YOURUSERNAME</code> as an example.
+			</p>
+			<a name="doas"><b>Configure Doas</b></a><p>
+				Put <code>permit persist keepenv YOURUSERNAME as root</code> in your doas.conf, if you want
+				to know what everything does you can find information on the doas.conf online.
+			</p>
+			<a name="yaydoas"><b>Yay with Doas</b></a><p>
+				To run <a href="linuxguide.html#yay">Yay</a> with with <a href="linuxguide.html#doas">Doas</a>, you need to make a shell alias,
+				simply add <code>alias yay='yay --sudo doas'</code> to your .kshrc, .bashrc, .mkshrc, or .zshrc
+			</p>
+			<a name="pacman"><b>Configure Pacman</b></a><p>
+				You can add the <code>ParalellDownloads</code> option to your <code>/etc/pacman.conf</code> to allow parallel
+				downloading, i recommend setting this to your processor threads, for example on my system i added.
+				<code>ParalellDownloads = 6</code>
+			</p>
+		</section>
+
+		<footer>
+			<a href="https://github.com/DbpGaming/DbpGaming.github.io">source</a>
+		</footer>
+	</body>
+
+</html>
