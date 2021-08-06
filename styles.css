@@ -7,6 +7,22 @@ section {
 	margin: auto;
 }
 
+a:link {
+	color:red;
+}
+
+a:visited {
+	color: pink;
+}
+
+a:hover {
+	color:pink;
+}
+
+a:active {
+	color:pink;
+}
+
 header {
 	background-color: #160016;
 	margin: auto;
