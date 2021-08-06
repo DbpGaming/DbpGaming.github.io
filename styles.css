@@ -7,6 +7,10 @@ section {
 	margin: auto;
 }
 
+span {
+	color: red;
+}
+
 a:link {
 	color:red;
 }
@@ -72,4 +76,21 @@ img {
 .posts{
 	font-size: 1.75vw;
 	text-align: center;
+}
+
+.slide {
+	position: relative;
+	display: inline-block;
+}
+
+.slide-link {
+	display: none;
+	position: absolute;
+	background-color:darkred;
+	min-width: 17vw;
+	padding: 0.5vw 0.75vw;
+}
+
+.slide:hover .slide-link {
+	display: block;
 }
