@@ -16,15 +16,15 @@ a:link {
 }
 
 a:visited {
-	color: pink;
+	color:#ff4b2b;
 }
 
 a:hover {
-	color:pink;
+	color:#ff4b2b;
 }
 
 a:active {
-	color:pink;
+	color:#ff4b2b;
 }
 
 header {
@@ -41,7 +41,7 @@ b {
 }
 
 h1 {
-	color: darkorchid;
+	color: #ff4848;
 	font-size: 3vw;
 	text-align: center;
 }
