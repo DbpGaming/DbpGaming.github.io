@@ -58,9 +58,9 @@ h3 {
 
 nav {
 	text-align: center;
-	font-size: x-large;
+	font-size:2vw;
 	background-color: #202020;
-	width: 160px;
+	width: fit-content;
 	height: 100%;
 	position: fixed;
 	left: 0;
