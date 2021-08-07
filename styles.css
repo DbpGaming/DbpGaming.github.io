@@ -93,7 +93,7 @@ img {
 	display: none;
 	position: absolute;
 	background-color:#202020;
-	width: 160px;
+	width: fit-content;
 }
 
 .slide:hover .slide-link {
