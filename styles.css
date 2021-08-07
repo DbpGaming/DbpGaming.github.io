@@ -42,28 +42,34 @@ b {
 
 h1 {
 	color: #ff4848;
-	font-size: 3vw;
+	font-size: xx-large;
 	text-align: center;
 }
 
 h2 {
-	font-size: 2vw;
+	font-size: x-large;
 	color: cornsilk;
 }
 
 h3 {
-	font-size: 1.5vw;
+	font-size: large;
 	color: cornsilk;
 }
 
 nav {
 	text-align: center;
-	font-size: 2vw;
+	font-size: x-large;
+	background-color: #202020;
+	width: 160px;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
 }
 
 footer {
 	text-align: center;
-	font-size: 2vw;
+	font-size: x-large;
 }
 
 img {
@@ -74,7 +80,7 @@ img {
 }
 
 .posts{
-	font-size: 1.75vw;
+	font-size: large;
 	text-align: center;
 }
 
@@ -86,11 +92,28 @@ img {
 .slide-link {
 	display: none;
 	position: absolute;
-	background-color:darkred;
-	min-width: 17vw;
-	padding: 0.5vw 0.75vw;
+	background-color:#202020;
+	width: 160px;
 }
 
 .slide:hover .slide-link {
 	display: block;
+}
+
+nav a:hover {
+	background-color: #101010;
+}
+
+nav a{
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav .slide{
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
