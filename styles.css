@@ -3,8 +3,20 @@ body {
 }
 
 section {
-	max-width: 70%;
+	max-width: 1024px;
 	margin: auto;
+}
+
+@media only screen and (max-width:1280px){
+	section{
+		max-width: 80%;
+	}
+}
+
+@media only screen and (max-width:1080px){
+	section{
+		max-width: 70%;
+	}
 }
 
 span {
