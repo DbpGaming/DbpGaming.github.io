@@ -149,7 +149,7 @@ nav .slide{
 	}
 
 	section {
-		max-width: fit-content;
+		max-width: 100%;
 	}
 
 	.slide-link {
