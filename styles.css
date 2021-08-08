@@ -151,4 +151,9 @@ nav .slide{
 	section {
 		max-width: fit-content;
 	}
+
+	.slide-link {
+		top: 45px;
+		padding-top: 10px;
+	}
 }
