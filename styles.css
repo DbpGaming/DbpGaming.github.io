@@ -19,23 +19,11 @@ section {
 	}
 }
 
-span {
+span, a:link{
 	color: red;
 }
 
-a:link {
-	color:red;
-}
-
-a:visited {
-	color:#ff4b2b;
-}
-
-a:hover {
-	color:#ff4b2b;
-}
-
-a:active {
+a:visited, a:hover, a:active{
 	color:#ff4b2b;
 }
 
@@ -72,9 +60,9 @@ nav {
 	text-align: center;
 	font-size:large;
 	background-color: #202020;
-	width: fit-content;
-	height: 100%;
 	position: fixed;
+	width: 135px;
+	height: 100%;
 	left: 0;
 	top: 0;
 }
@@ -102,28 +90,24 @@ img {
 }
 
 .slide-link {
-	display: none;
+	top: -200%;
+	background-color: #202020;
+	width: 130px;
 	position: absolute;
-	background-color:#202020;
-	width: fit-content;
+	display: none;
 }
 
 .slide:hover .slide-link {
+	left: 135px;
+	top: 0%;
 	display: block;
 }
 
-nav a:hover {
+nav a:hover, nav .slide:hover{
 	background-color: #101010;
 }
 
-nav a{
-	display: block;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
-nav .slide{
+nav a, nav .slide{
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
@@ -133,14 +117,10 @@ nav .slide{
 @media only screen and (max-width: 768px) {
 	nav {
 		width: 100%;
-		height: fit-content;
+		height: 50px;
 	}
 
-	nav a{
-		float: left;
-	}
-
-	nav .slide{
+	nav a, nav .slide{
 		float: left;
 	}
 
@@ -148,12 +128,12 @@ nav .slide{
 		margin-top: 60px;
 	}
 
-	section {
-		max-width: 100%;
+	.slide:hover .slide-link {
+		left: 0%;
+		top: 50px;
 	}
 
-	.slide-link {
-		top: 45px;
-		padding-top: 10px;
+	section {
+		max-width: 100%;
 	}
 }
