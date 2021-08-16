@@ -7,15 +7,9 @@ section {
 	margin: auto;
 }
 
-@media only screen and (max-width:1280px){
+@media only screen and (max-width:1324px){
 	section{
-		max-width: 80%;
-	}
-}
-
-@media only screen and (max-width:1080px){
-	section{
-		max-width: 70%;
+		max-width: calc(100vw - 300px);
 	}
 }
 
