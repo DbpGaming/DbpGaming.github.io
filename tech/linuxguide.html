@@ -29,155 +29,180 @@
 		</nav>
 
 		<section>
-			<h2>System Level Software</h2>
-			<a name="dash"><b>Dash</b></a><p>
-				Debian Almquist SHell is the Debian port of ash, it's a super lightweight <a href="technologies.html#shell">shell</a> that's great for script
-				execution, lacks many basic features for users, <a href="config.html#changebinsh">i highly recommend you link this to /bin/sh.</a>
+			<h2><a href="technologies.html#shell">Shells</a></h2>
+			<a name="dash">Dash</a><p>
+				Debian Almquist SHell is the Debian port of ash, it's a super lightweight shell that's great for script
+				execution, <a href="config.html#changebinsh">i highly recommend you link this to /bin/sh.</a>
 			</p>
-			<a name="doas"><b>Doas</b></a><p>
-				Allows you to run a command as another user (ie Sudo), Doas is super lightweight compared to it's server
-				oriented counterpart, great for single user pcs. Check out, <a href="config.html#doas">Conf Doas</a> and
-				<a href="config.html#yaydoas">Yay with Doas</a>
-			</p>
-			<a name="oksh"><b>Oksh</b></a><p>
-				Oksh - OpenBSD Korn Shell, one of the best <a href="technologies.html#shell">shells</a> on linux,
-				extremely lightweight, though is slower on execution time, recommend using it as your user shell
-				with dash as /bin/sh, <a href="config.html#changeshell">how to change your user shell.</a>
+			<a name="oksh">Oksh</a><p>
+				Oksh - OpenBSD Korn Shell, one of the best shells on linux, extremely lightweight,
+				recommend using it as your user shell with dash as /bin/sh,
+				<a href="config.html#changeshell">how to change your user shell.</a>
 				<a href="config.html#env">you need to set your ENV var</a> to be able to config your .shrc.
 			</p>
-			<a name="zsh"><b>Zsh</a></b><p>
-				Z Shell, is a really advanced User <a href="technologies.html#shell">shell</a> with a ton of features, if you want something that can do
+			<a>rc</a><p>plan9 shell.</p>
+			<a name="zsh">Zsh</a><p>
+				Z Shell, is a really advanced User shell with a ton of features, if you want something that can do
 				everything this is it, it is extremely heavy on memory usage and could be considered bloated.
 			</p>
-			<a name="pacman"><b>Pacman</b></a><p>The <a href="distros.html#arch">Arch Linux</a> package manager, it's great, look at <a href="config.html#pacman">Conf Pacman</a></p>
 		</section>
 
 		<section>
-			<h2>Basic CLI Applications</h2>
-			<a name="yay"><b>Yay</b></a><p>Yay is a AUR helper, also note <a href="config.html#yaydoas">Yay with Doas</a></p>
-			<a name="mc"><b>Midnight Commander</b></a><p>A <a href="technologies.html#terminal">terminal</a> file manager that is a part of GNU.</p>
-			<a name="lf"><b>lf</b></a><p>A <a href="technologies.html#terminal">terminal</a> file manager.</p>
-			<a name="nnn"><b>nnn</b></a><p>Noice is Not Noice is a <a href="technologies.html#terminal">terminal</a> file manager based on Noice.</p>
-			<a name="links"><b>Links2</b></a><p>A lynx like <a href="technologies.html#terminal">terminal</a> based <a href="technologies.html#http">HTTP</a> browser.</p>
-			<a name="lynx"><b>Lynx</b></a><p>
-				A <a href="technologies.html#terminal">terminal</a> based
-				<a href="technologies.html#gopher">gopher</a>/<a href="technologies.html#http">HTTP</a>
-				browser, it's considered the terminal based web browser.
+			<h2>System Level Software</h2>
+			<a>SU Tricks</a><p>DoAS/Sudo can be replaced with a alias, <a href="config.html#su">how to alias su.</a></p>
+			<a name="doas">Doas</a><p>
+				Runs commands as another user, is super lightweight, great for single user pcs. also, <a href="config.html#doas">Conf Doas</a>.
 			</p>
-			<a name="w3m"><b>w3m</b></a><p>A <a href="technologies.html#terminal">terminal</a> based browser only notable for supporting images in certain terminal emualtors.</p>
-			<a name="mutt"><b>Mutt</b></a><p>A <a href="technologies.html#terminal">terminal</a> based <a href="technologies.html#email">email</a> client.</p>
-			<a name="vis"><b>Vis</b></a><p>A <a href="technologies.html#terminal">terminal</a> based text editor inspired by Vi, Vim, and plan9 Sam, based around Structural Expressions.</p>
-			<a name="nano"><b>Nano</b></a><p>A <a href="technologies.html#terminal">terminal</a> based text editor essentially GNU notepad.</p>
-			<a name="htop"><b>Htop</b></a><p>A <a href="technologies.html#terminal">terminal</a> process/task manager, really low resource and simple.</p>
-			<a name="concalc"><b>concalc</b></a><p>A <a href="technologies.html#terminal">terminal</a>(console) calculator.</p>
-			<a name="neofetch"><b>Neofetch</b></a><p>A simple <a href="technologies.html#terminal">terminal</a> system info Utility, inspired by screenfetch.</p>
-			<a name="newsboat"><b>Newsboat</b></a><p>A simple <a href="technologies.html#terminal">terminal</a> <a href="technologies.html#rss">RSS</a> feed reader, great for keeping up with News.</p>
-			<a name="sfeed"><b>sfeed</b></a><p>A suckless <a href="technologies.html#terminal">terminal</a> <a href="technologies.html#rss">RSS</a> feed reader</p>
-			<a name="mpvcli"><b>MPV</b></a><p><a href="#mpv">MPV</a> can be used as a <a href="technologies.html#terminal">terminal</a> music player, one of the best ones around.</p>
-			<a name="gomuks"><b>gomuks</b></a><p>A <a href="technologies.html#terminal">terminal</a> <a href="technologies.html#matrix">matrix</a> client.</p>
-			<a name="sic"><b>sic</b></a><p>A suckless/simple <a href="technologies.html#terminal">terminal</a> <a href="technologies.html#irc">IRC</a> client.</p>
-			<a name="btpd"><b>btpd</b></a><p>bittorrent protocol daemon, can be used to torrent from the <a href="technologies.html#terminal">terminal</a></p>
-			<a name="screen"><b>Screen</b></a><p>GNU Screen is a <a href="technologies.html#terminal">terminal</a> multiplexer, simple and stable</p>
-			<a name="dvtm"><b>dvtm</b></a><p>A <a href="technologies.html#terminal">terminal</a> multiplexer inspired by DWM</p>
-			<a name="adbuco"><b>adbuco</b></a><p>A <a href="technologies.html#terminal">terminal</a> session manager.</p>
+			<a name="pacman">Pacman</a><p>The <a href="distros.html#arch">Arch Linux</a> package manager, look at <a href="config.html#pacman">Conf Pacman</a></p>
+		</section>
+
+		<section>
+			<h2><a href="technologies.html#terminal">Terminal</a> Text Editors</h2>
+			<a name="vis">Vis</a><p>A text editor inspired by Vi, Vim, and plan9 Sam, based around Structural Expressions.</p>
+			<a name="nano">Nano</a><p>A text editor essentially GNU notepad.</p>
+			<a name="micro">Micro</a><p>A text editor essentially TUI sublime.</p>
+		</section>
+
+		<section>
+			<h2><a href="technologies.html#terminal">Terminal</a> <a href="technologies.html#rss">RSS</a> Feed Readers</h2>
+			<a name="newsboat">Newsboat</a><p>A simple RSS feed reader, great for keeping up with News.</p>
+			<a name="sfeed">sfeed</a><p>A suckless RSS feed reader</p>
+			<a name="sfeedc">sfeed curses</a><p>A simple RSS feed reader.</p>
+		</section>
+
+		<section>
+			<h2><a href="technologies.html#terminal">Terminal</a> <a href="technologies.html#chat">Chat</a> Clients</h2>
+			<a name="gomuks">gomuks</a><p>A matrix client.</p>
+			<a name="sic">sic</a><p>A suckless/simple IRC client.</p>
+		</section>
+
+		<section>
+			<h2>Terminal <a href="technologies.html#web">Web</a> Browsers</h2>
+			<a name="links">Links2</a><p>A lynx like Web browser.</p>
+			<a name="lynx">Lynx</a><p>A Web browser, it's considered the simpest.</p>
+			<a name="w3m">w3m</a><p>A Web browser only notable for supporting images in certain terminal emualtors.</p>
+		</section>
+
+		<section>
+			<h2>Basic <a href="technologies.html#terminal">Terminal</a> Applications</h2>
+			<a name="yay">Yay</a><p>Yay is a AUR helper, also note, you need sudo or, <a href="config.html#yaydoas">Yay with Doas</a></p>
+			<a name="sfm">sfm</a><p>A file manager.</p>
+			<a name="mutt">Mutt</a><p>A <a href="technologies.html#email">email</a> client.</p>
+			<a name="concalc">concalc</a><p>A calculator.</p>
+			<a name="htop">Htop</a><p>A process/task manager, really low resource and simple.</p>
+			<a name="pfetch">pfetch</a><p>A simple system info Utility, inspired by screenfetch.</p>
+			<a name="mpvcli">MPV</a><p><a href="#mpv">MPV</a> can be used as a music player, one of the best ones around.</p>
+			<a name="btpd">btpd</a><p>bittorrent protocol daemon, can be used to torrent from the terminal</p>
+			<a name="screen">Screen</a><p>GNU Screen is a multiplexer, simple and stable</p>
+			<a name="dvtm">dvtm</a><p>A multiplexer inspired by DWM</p>
+			<a name="adbuco">adbuco</a><p>A session manager.</p>
+			<a>BVI</a><p>Binary VI, VI like hex editor.</p>
 		</section>
 
 		<section>
 			<h2>CLI Applications for non humans (programs for use in scripts)</h2>
-			<a name=tiramisu><b>tiramisu</b></a><p>A notification daemon that can be piped into whatever you please.</p>
-			<a name="herbe"><b>herbe</b></a><p>A notification bubble without a daemon can be piped into from <a href="#tiramisu">tiramisu</a></p>
-			<a name="pick" href="https://github.com/mptre/pick"><b>pick</b></a><p>Option selection, think cli dmenu.</p>
-			<a name="dbar" href="https://sites.google.com/site/gotmor/"><b>dbar</b></a>
-			<a name="skroll" href="https://z3bra.org/skroll/"><b>skroll</b></a><p>Scrolling text.</p>
-			<a name="quvi" href="https://github.com/mogaal/quvi"><b>quvi</b></a>
-			<a name="isync" href="https://isync.sourceforge.io/"><b>isync</b></a>
+			<a name=tiramisu>tiramisu</a><p>A notification daemon that can be piped into whatever you please.</p>
+			<a name="herbe">herbe</a><p>A notification bubble without a daemon can be piped into from tiramisu</p>
+			<a name="pick" href="https://github.com/mptre/pick">pick</a><p>Option selection, think cli dmenu.</p>
+			<a name="quvi" href="https://github.com/mogaal/quvi">quvi</a>
+			<a name="isync" href="https://isync.sourceforge.io/">isync</a>
+		</section>
+
+		<section>
+			<h2><a href="technologies.html#terminal">Terminal</a> Emulators</h2>
+			<a name="lxterm">lxerminal</a><p>LXDE terminal, light weight and scales really well, also has tabs, transparency, etc.</p>
+			<a name="sterm">sterm</a><p>Suckless terminal, light weight, scales poorly, but highly modable, great for hobbists.</p>
+		</section>
+
+		<section>
+			<h2>Image Viewers</h2>
+			<a name="sxiv">SXIV</a><p>Suckless X Image Viewer</p>
+			<a name="feh">Feh</a><p>Image Viewer.</p>
+			<a name="xfi">XFI</a><p>The builtin Image Viewer of <a href="#xfe">XFE</a></p>
+		</section>
+
+		<section>
+			<h2>Document/Book Readers</h2>
+			<a name="zathura">Zathura</a><p>Document Viewer, with modules for, cb(r/z), pdf, epub, djvu, and more.</p>
+			<a>MuPDF</a><p>PDF/EPUB/CBZ Reader</p>
+		</section>
+
+		<section>
+			<h2>GUI Browsers</h2>
+			<a name="librewolf">LibreWolf</a><p><a href="technologies.html#http">HTTP</a> browser, A fork of FireFox focused around privacy</p>
+			<a name="icecat">Icecat</a><p><a href="technologies.html#http">HTTP</a> browser, GNU fork of FireFox rarely updated.</p>
+			<a name="chromium">Degoogled Chromium</a><p><a href="technologies.html#http">HTTP</a> browser, De-botneted Chromium</p>
+			<a name="surf">Surf</a><p>Suckless <a href="technologies.html#http">HTTP</a> Browser</p>
+		</section>
+
+		<section>
+			<h2>GUI File Managers</h2>
+			<a name="xfe">XFE</a><p>Gui file manager styled around legacy design.</p>
+			<a name="thunar">Thunar</a><p>The Default XFCE file manager.</p>
+			<a>PCManFM</a><p>LXDE File Manager.</p>
 		</section>
 
 		<section>
 			<h2>Basic GUI Applications</h2>
-			<a name="xfe"><b>XFE</b></a><p>Gui file manager styled around legacy design.</p>
-			<a name="thunar"><b>Thunar</b></a><p>The Default XFCE file manager.</p>
-			<a name="librewolf"><b>LibreWolf</b></a><p><a href="technologies.html#http">HTTP</a> browser, A fork of FireFox focused around privacy</p>
-			<a name="icecat"><b>Icecat</b></a><p><a href="technologies.html#http">HTTP</a> browser, GNU fork of FireFox rarely updated.</p>
-			<a name="chromium"><b>Degoogled Chromium</b></a><p><a href="technologies.html#http">HTTP</a> browser, De-botneted Chromium</p>
-			<a name="surf"><b>Surf</b></a><p>Suckless <a href="technologies.html#http">HTTP</a> Browser</p>
-			<a name="thunderbird"><b>Thunderbird</b></a><p>Advanced all in one <a href="technologies.html#email">email</a> client by mozilla.</p>
-			<a name="pinta"><b>Pinta</b></a><p>Paint.net clone.</p>
-			<a name="word"><b>Abiword</b></a><p>Wordpad clone.</p>
-			<a name="leafpad"><b>Leafpad</b></a><p>Notepad clone</p>
-			<a name="screenshot"><b>Screenshooter</b></a><p>Screenshot tool, basically the same as Snipping Tool on windows</p>
-			<a name="mpv"><b>MPV</b></a><p>MPV is video and audio player forked from mplayer</p>
-			<a name="sxiv"><b>SXIV</b></a><p>Suckless X Image Viewer</p>
-			<a name="xfceiv"><b>Ristretto</b></a><p>XFCE Image Viewer</p>
-			<a name="xfi"><b>XFI</b></a><p>The builtin Image Viewer of <a href="#xfe">XFE</a></p>
-			<a name="lxterm"><b>lxerminal</b></a><p>
-				LXDE <a href="technologies.html#terminal">terminal</a>, light weight and scales really well, also has tabs, transparency,
-				and all the features you'd expect from a terminal emulator.
-			</p>
-			<a name="sterm"><b>sterm</b></a><p>
-				Suckless <a href="technologies.html#terminal">terminal</a>, light weight, scales poorly, but highly modable,
-				great for hobbists.
-			</p>
-			<a name="camera"><b>Kamoso</b></a><p>KDE Webcam application.</p>
-			<a name="gamehub"><b>Gamehub</b></a><p>
-				Game launcher, steam/playnite alternative, great emulator,
-				and wine support
-			</p>
-			<a name="gimp"><b>Gimp</b></a><p>GNU Image Manipulation Program, essentially GNU Photoshop</p>
-			<a name="zathura"><b>Zathura</b></a><p>Document Viewer, with modules for, cb(r/z), pdf, epub, djvu, and more.</p>
-			<a name="github"><b>Github Desktop</b></a><p>Gui git, sucks in some ways, great in others.</p>
-			<a name="xarchiver"><b>XArchiver</b></a><p>Peak File Archival Performance.</p>
-			<a name="vscode"><b>VSCodium</b></a><p>IDE, De-microsofted, better than anything else but is electron.</p>
-			<a name="xfburn"><b>XFBurn</b></a><p>XFCE ImgBurn, lightweight disc burning application</p>
-			<a name="quickmedia"><b>Quickmedia</b></a><p>
+			<a name="thunderbird">Thunderbird</a><p>Advanced all in one <a href="technologies.html#email">email</a> client by mozilla.</p>
+			<a name="pinta">Pinta</a><p>Paint.net clone.</p>
+			<a name="word">Abiword</a><p>Wordpad clone.</p>
+			<a name="leafpad">Leafpad</a><p>Notepad clone</p>
+			<a name="screenshot">Screenshooter</a><p>Screenshot tool, basically the same as Snipping Tool on windows</p>
+			<a name="mpv">MPV</a><p>MPV is video and audio player forked from mplayer</p>
+			<a name="camera">Kamoso</a><p>KDE Webcam application.</p>
+			<a name="gimp">Gimp</a><p>GNU Image Manipulation Program, essentially GNU Photoshop</p>
+			<a name="github">Github Desktop</a><p>Gui git, sucks in some ways, great in others.</p>
+			<a name="xarchiver">XArchiver</a><p>Peak File Archival Performance.</p>
+			<a name="vscode">VSCodium</a><p>IDE, De-microsofted, better than anything else but is electron.</p>
+			<a name="xfburn">XFBurn</a><p>XFCE ImgBurn, lightweight disc burning application</p>
+			<a name="quickmedia">Quickmedia</a><p>
 				Quickmedia is a native, keyboard controlled, app for youtube,
 				4chan, soundcloud, <a href="technologies.html#matrix">matrix</a>, and more.
 			</p>
-			<a name="nheko"><b>Nheko</b></a><p><a href="technologies.html#matrix">matrix</a> Client</p>
-			<a name="mmc"><b>MultiMC</b></a><p>Minecraft Launcher, supports basically any modpack possible.</p>
-			<a name="kcalc"><b>kcalc</b></a><p>KDE Calculator, not much to say.</p>
-			<a name="kchar"><b>kcharselect</b></a><p>KDE Character Select, useful for other scripts, not much to say.</p>
+			<a name="nheko">Nheko</a><p><a href="technologies.html#matrix">matrix</a> Client</p>
+			<a name="kcalc">kcalc</a><p>KDE Calculator.</p>
+			<a name="kchar">kcharselect</a><p>KDE Character Select.</p>
+		</section>
+
+		<section>
+			<h2>Gaming</h2>
+			<a name="gamehub">Gamehub</a><p>Game launcher, steam/playnite alternative, great emulator, and wine support</p>
+			<a name="mmc">MultiMC</a><p>Minecraft Launcher, supports basically any modpack possible.</p>
+			<a>AntiMicroX</a><p>Controller remapper.</p>
 		</section>
 
 		<section>
 			<h2>Emulators</h2>
-			<a name="dosemu"><b>dosemu2</b></a><p>Dos Emulator, can be ran in your <a href="technologies.html#terminal">terminal</a> and other special things, sometimes useful.</p>
-			<a name="doxbox"><b>doxboxx</b></a><p>DosBox but actually accurate, can run windows 98 and basically any games.</p>
-			<a name="wine"><b>WineGE</b></a><p>Windows compatiblity layer, has backports from proton, and other fixes by GE.</p>
-			<a name="anbox"><b>Anbox</b></a><p>Android in a box, abusing the fact android uses Linux</p>
-			<a name="darling" href="https://www.darlinghq.org/"><b>Darling</b></a><p>MacOS compatiblity layer.</p>
-			<a name="vice" href="https://vice-emu.sourceforge.io/"><b>Vice</b></a><p>Commodore Emulation.</p>
-			<a name="ppsspp"><b>PPSSPP</b></a><p>Really accurate and featured PSP emulator.</p>
-			<a name="pcsx2"><b>PCSX2</b></a><p>The best PS2 emulator, not great but in a lot of cases the only option.</p>
-			<a name="play"><b>Play!</b></a><p>A more minimal PS2 emulator, not enough games work currently.</p>
-			<a name="rpcs3"><b>RPCS3</b></a><p>The only PS3 Emulator.</p>
-			<a name="melonds"><b>MelonDS</b></a><p>The best and most open DS emulator.</p>
-			<a name="dolphin"><b>Dolphin</b></a><p>Decently Accurate but not perfect, and insanely featured GCN/WII emulator.</p>
-			<a name="m64p"><b>Mupen64Plus</b></a><p>N64 emulator, minimal, supports plugins, use <a href="#gn64">GlideN64</a>.</p>
-			<a name="gn64"><b>
-				GlideN64</b></a><p>A accurate but featured graphics plugin for N64 emulators,
-				use with <a href="#m64p">Mupen64Plus</a>
-			</p>
-			<a name="yabause" href="https://yabause.org/"><b>Yabause</b></a><p>Sega saturn emulator.</p>
-			<a name="reicast" href="https://reicast.com/"><b>Reicast</b></a><p>Dreamcast emulator</p>
-			<a name="hatari" href="https://hatari.tuxfamily.org/"><b>hatari</b></a><p>16bit Atari emulator.</p>
-			<a name="atari800" href="https://atari800.github.io/"><b>atari800</b></a><p>8bit Atari emulator.</p>
-			<a name="mednafen"><b>Mednafen</b></a><p>
+			<a name="dosemu">dosemu2</a><p>Dos Emulator, can be ran in your <a href="technologies.html#terminal">terminal</a> and other special things, sometimes useful.</p>
+			<a name="doxbox">doxboxx</a><p>DosBox but actually accurate, can run windows 98 and basically any games.</p>
+			<a name="wine">WineGE</a><p>Windows compatiblity layer, has backports from proton, and other fixes by GE.</p>
+			<a name="anbox">Anbox</a><p>Android in a box, abusing the fact android uses Linux</p>
+			<a name="darling" href="https://www.darlinghq.org/">Darling</a><p>MacOS compatiblity layer.</p>
+			<a name="vice" href="https://vice-emu.sourceforge.io/">Vice</a><p>Commodore Emulation.</p>
+			<a name="ppsspp">PPSSPP</a><p>Really accurate and featured PSP emulator.</p>
+			<a name="pcsx2">PCSX2</a><p>The best PS2 emulator, not great but in a lot of cases the only option.</p>
+			<a name="play">Play!</a><p>A more minimal PS2 emulator, not enough games work currently.</p>
+			<a name="rpcs3">RPCS3</a><p>The only PS3 Emulator.</p>
+			<a name="melonds">MelonDS</a><p>The best and most open DS emulator.</p>
+			<a name="dolphin">Dolphin</a><p>Decently Accurate but not perfect, and insanely featured GCN/WII emulator.</p>
+			<a name="m64p">Mupen64Plus</a><p>N64 emulator, minimal, supports plugins.</p>
+			<a name="gn64">GlideN64</a><p>A accurate but featured graphics plugin for N64 emulators, use with Mupen64Plus.</p>
+			<a name="yabause" href="https://yabause.org/">Yabause</a><p>Sega saturn emulator.</p>
+			<a name="reicast" href="https://reicast.com/">Reicast</a><p>Dreamcast emulator</p>
+			<a name="hatari" href="https://hatari.tuxfamily.org/">hatari</a><p>16bit Atari emulator.</p>
+			<a name="atari800" href="https://atari800.github.io/">atari800</a><p>8bit Atari emulator.</p>
+			<a name="mednafen">Mednafen</a><p>
 				Multisystem emulator, supports a ton of consoles while also being minimal
 				it includes a ps1, nes, gb, gbc, gba, a bsnes based snes emulator, and more.
 			</p>
-			<p>
-				Everything below can be replaced by mednafen, but due to its poor performance
-				with pulse audio it's hard to recommend on linux, plus some of these have extra
-				features.
-			</p>
-			<a name="duckstation"><b>Duckstation</b></a><p>
+			<a name="duckstation">Duckstation</a><p>
 				PS1 emulator with widescreen hacks, high resolution support, and a ton of other,
 				neat things. not that minimal.
 			</p>
-			<a name="mgba"><b>MGBA</b></a><p>GBA emu.</p>
-			<a name="bsnes"><b>BSNES</b></a><p>A highly featured and accurate SNES emulator.</p>
-			<a name="mesen"><b>Mesen</b></a><p>A highly featured NES Emulator</p>
+			<a name="mgba">MGBA</a><p>GBA emu.</p>
+			<a name="bsnes">BSNES</a><p>A highly featured and accurate SNES emulator.</p>
+			<a name="mesen">Mesen</a><p>A highly featured NES Emulator</p>
 		</section>
 
 		<footer>

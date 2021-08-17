@@ -30,8 +30,13 @@ p {
 	color: blanchedalmond;
 }
 
-b {
+a {
 	color: oldlace;
+	font-weight: bold;
+}
+
+p a, nav a{
+	font-weight: normal;
 }
 
 h1 {
