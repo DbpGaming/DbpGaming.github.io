@@ -1,80 +1,47 @@
-body {
-	background-color: black;
+body, nav a:hover, nav .slide:hover {
+	background-color: #282828;
 }
 
-section {
+a:link, a, h1, h2{
+	color: #cc241d;
+}
+
+a:visited, a:hover, a:active, span{
+	color:#fb4934;
+}
+
+p {
+	color: #a89984;
+}
+
+nav, .slide-link{
+	background-color: #202020;
+	width: 135px;
+	position: fixed;
+	font-size: large;
+}
+
+footer, .posts, h1, nav, nav a, nav .slide {
+	text-align: center;
+}
+
+footer, .posts, h2 {
+	font-size: x-large;
+}
+
+h1{
+	font-size: xx-large;
+}
+
+section, header, h1 {
 	max-width: 1024px;
 	margin: auto;
 }
 
-@media only screen and (max-width:1324px){
-	section, h1{
-		max-width: calc(100vw - 300px);
-	}
-}
-
-span, a:link{
-	color: red;
-}
-
-a:visited, a:hover, a:active{
-	color:#ff4b2b;
-}
-
-header {
-	background-color: #160000;
-	margin: auto;
-}
-
-p {
-	color: blanchedalmond;
-}
-
-a {
-	color: oldlace;
-	font-weight: bold;
-}
-
-p a, nav a{
-	font-weight: normal;
-}
-
-h1 {
-	color: #ff4848;
-	font-size: xx-large;
-	text-align: center;
-	margin: auto;
-}
-
-h2 {
-	font-size: x-large;
-	color: pink;
-	text-align: center;
-}
-
-section h2 {
-	text-align: unset;
-}
-
-h3 {
-	font-size: large;
-	color: cornsilk;
-}
-
 nav {
-	text-align: center;
-	font-size:large;
-	background-color: #202020;
-	position: fixed;
-	width: 135px;
 	height: 100%;
 	left: 0;
 	top: 0;
-}
-
-footer {
-	text-align: center;
-	font-size: x-large;
 }
 
 img {
@@ -84,21 +51,8 @@ img {
 	height:auto;
 }
 
-.posts{
-	font-size: large;
-	text-align: center;
-}
-
-.slide {
-	position: relative;
-	display: inline-block;
-}
-
 .slide-link {
 	top: -200%;
-	background-color: #202020;
-	width: 130px;
-	position: fixed;
 }
 
 .slide:hover .slide-link {
@@ -106,15 +60,16 @@ img {
 	top: 50px;
 }
 
-nav a:hover, nav .slide:hover{
-	background-color: #101010;
-}
-
 nav a, nav .slide{
 	display: block;
-	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+}
+
+@media only screen and (max-width:1324px){
+	section, h1{
+		max-width: calc(100vw - 300px);
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -127,30 +82,19 @@ nav a, nav .slide{
 		float: left;
 	}
 
+	.slide-link a{
+		float: unset;
+	}
+
 	header h1 {
 		margin-top: 60px;
 	}
 
 	.slide:hover .slide-link {
-		left: 75px;
-		top: 50px;
+		left: unset;
 	}
 
 	section, h1 {
 		max-width: 100%;
-	}
-}
-
-@media only screen and (max-width: 613px) {
-	nav {
-		height: 100px;
-	}
-
-	.slide:hover .slide-link {
-		top: 100px;
-	}
-
-	header h1 {
-		margin-top: 110px;
 	}
 }
