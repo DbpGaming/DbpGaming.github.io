@@ -47,6 +47,10 @@
 		<section>
 			<h2><a href="technologies.html#shell">Shells</a></h2>
 			<a name="busybox-ash">Busybox Ash</a><p>The remake of ash in Busybox lightweight and fast, as well as nearly as featured as oksh.</p>
+			<a name="toysh">Toybox Toysh</a><p>
+				The remake of bash in toybox lightweight and fast, lacking features like tab completion and colors,
+				so is essentially dash for bash scripts at this point.
+			</p>
 			<a name="dash">Dash</a><p>
 				Debian Almquist SHell is the Debian port of ash, it's a super lightweight shell that's great for script
 				execution, <a href="config.html#changebinsh">i highly recommend you link this to /bin/sh.</a>
@@ -82,7 +86,11 @@
 
 		<section>
 			<h2><a href="technologies.html#terminal">Terminal</a> Text Editors</h2>
-			<a name="busybox-vi">Busybox VI</a><p>Busyboy verison of vi, slim but has some extra features that make it really nice. while also being lightweight.</p>
+			<a name="toybox-vi">Toybox VI</a><p>
+				Toybox verison of vi, slim but has some extra features that make it really nice. while also being lightweight,
+				way cleaner code than the busybox version but uses more memory.
+			</p>
+			<a name="busybox-vi">Busybox VI</a><p>Busybox verison of vi, slim but has some extra features that make it really nice. while also being lightweight.</p>
 			<a name="vis">Vis</a><p>A text editor inspired by Vi, Vim, and plan9 Sam, based around Structural Expressions.</p>
 			<a name="nano">Nano</a><p>A text editor essentially GNU notepad.</p>
 			<a name="mg">mg</a><p>Micro emacs.</p>
@@ -92,7 +100,6 @@
 		<section>
 			<h2>Terminal Multiplexors/Session Management</h2>
 			<a name="dvtm">dvtm</a><p>A multiplexer inspired by DWM</p>
-			<a name="screen">Screen</a><p>GNU Screen is a multiplexer, simple and stable</p>
 			<a>mtm</a><p>A multiplexer</p>
 			<a name="adbuco">adbuco</a><p>A session manager.</p>
 		</section>
@@ -128,10 +135,8 @@
 			<h2>Basic <a href="technologies.html#terminal">Terminal</a> Applications</h2>
 			<a name="yay">Yay</a><p>Yay is a AUR helper, also note, you need sudo or, <a href="config.html#yaydoas">Yay with Doas</a></p>
 			<a name="sfm">sfm</a><p>A file manager.</p>
-			<!--
-			<a name="mutt">Mutt</a><p>A <a href="technologies.html#email">email</a> client.</p>
-			<a href="https://abook.sourceforge.io/">abook</a><p>Address Book compatible with mutt.</p>
-			-->
+			<a>Toybox Top</a><p>simple implementation of top, really nice.</p>
+			<a>Busybox Top</a><p>simple implementation of top, worse than toyboxes but still isn't horrile.</p>
 			<a name="htop">Htop</a><p>A process/task manager, really low resource and simple.</p>
 			<a name="pfetch">pfetch</a><p>A simple system info Utility, inspired by screenfetch.</p>
 			<a name="mpvcli">MPV</a><p><a href="#mpv">MPV</a> can be used as a music player, one of the best ones around.</p>
@@ -142,20 +147,21 @@
 			-->
 		</section>
 
-	<!--
+
 		<section>
 			<h2>CLI Applications for non humans (programs for use in scripts)</h2>
-			<a name=tiramisu>tiramisu</a><p>A notification daemon that can be piped into whatever you please.</p>
 			<a name="herbe">herbe</a><p>A notification bubble without a daemon can be piped into from tiramisu</p>
 			<a name="pick" href="https://github.com/mptre/pick">pick</a><p>Option selection, think cli dmenu.</p>
+				<!--
+			<a name=tiramisu>tiramisu</a><p>A notification daemon that can be piped into whatever you please.</p>
 			<a name="quvi" href="https://github.com/mogaal/quvi">quvi</a>
 			<a name="isync" href="https://isync.sourceforge.io/">isync</a>
+				-->
 		</section>
-	-->
 
 		<section>
 			<h2><a href="technologies.html#terminal">Terminal</a> Emulators</h2>
-			<a name="sterm">sterm</a><p>Suckless terminal, light weight, scales poorly, but highly modable, great for hobbists.</p>
+			<a name="st">st</a><p>Suckless terminal, light weight, scales poorly, but highly modable, great for hobbists.</p>
 			<a href="https://github.com/majestrate/wterm">wterm</a><p>wayland terminal.</p>
 			<a name="lxterm">lxterminal</a><p>LXDE terminal, light weight and scales really well, also has tabs, transparency, etc.</p>
 			<a>kconsole</a>
