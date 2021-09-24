@@ -65,36 +65,47 @@
 				Provides a simple libc that can be statically linked.
 			</p>
 
+			<a>Dash</a><p>
+				really simple posix shell, a bit bloated on memory usage, busybox ash is better, hopefulyl toysh can be fixed up and replace it
+			</p>
+
 			<a>Toybox</a><p>
 				Provides simple and efficient core utils, would probably be best to fork and add plan9 features as well as strip unneeded gnu features.
 			</p>
 
+			<a>Doas</a><p>
+				runs a program as another user, probably should be replaced by a program added in forked toybox.
+			</p>
+
 			<a>runit</a><p>
-				super simple and fast init system.
+				super simple and fast init system. maybe use sinit to augment.
 			</p>
 
 			<a href="https://www.simple-cc.org/">simple c compiler</a><p>
 				simple qbe frontend c compiler.
 			</p>
+
+			<a href="https://git.2f30.org/smdev/file/README.html">smdev</a><p>
+				suckless mdev.
+			</p>
+
+			<a href="https://www.libressl.org/">LibreSSL</a><p>
+				openssl but less bad.
+			</p>
+
+			<a href="http://smarden.org/socklog/">socklog</a><p>
+				system and kernel logging services.
+			</p>
+
+			<a href="https://www.pkgsrc.org/">pkgsrc</a><p>
+				a really simple yet featured and featured package management system, supports both source and binary.
+			</p>
 		</section>
 
 		<section>
 			<h2>Software that is still needed for this</h2>
-
-			<a>Execute command as another user</a><p>
-				doas is probably okay, id rather implement a alternative in the Toybox fork however.
-			</p>
-
-			<a>Shell</a><p>
-				pdksh is an option but is not efficient enough imo, if busybox ash was standalone it would be perfect, maybe we can fix up Toybox sh.
-			</p>
-
 			<a>Kernel</a><p>
 				Linux and openbsd aren't microkernels and besides linux seems a bit too bloated, minix is outdated, gnu mach seems doesn't seem ready.
-			</p>
-
-			<a>Package Manager</a><p>
-				a simple source based package manager would be nice, portage seems bloated.
 			</p>
 		</section>
 
