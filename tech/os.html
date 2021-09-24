@@ -46,107 +46,55 @@
 		</nav>
 
 		<section>
-			<h2>simple. secure. correct. libre. modular. extensible. lightweight. and user-choice driven.</h2>
-
+			<h2>Simple. Correct. Extensible. And Choice Driven</h2>
 			<p>Write up on how i think operating systems should be designed, sort of tired of the current systems we have.</p>
 
-			<p>
-				first a operating system would need to be light weight, 64mb of ram should run the operating system in a terminal only state,
-				and even then that's a bit much.
-			</p>
+			<p>Simple. a operating system should be simple, a low line count auditable codebase, but also low memory usage.</p>
 
-			<p>a operating system would need to be correct, i'm refering to openbsd like correctness, do everything the right way.</p>
+			<p>Correct. do it right, or not at all, do not half ass implement bluetooth drivers to drive the userbase up.</p>
 
-			<p>the kernel should be either a hybrid or microkernel, this is just modern shit.</p>
+			<p>Extensible. every part of the OS should be a tool that can be used in conjunction with others.</p>
 
-			<p>drivers should mainly be one monolithic open source package maintained by the community.</p>
-
-			<p>
-				the operating system should have a set spec, and replacing the binaries within that spec being perfectly acceptable,
-				think the posix spec but more sane and enforced
-			</p>
-
-			<p>
-				the operating system should use source based package management allowing software to be build for a specific system,
-				and to be easily patched.
-			</p>
-
-			<p>it should allow you to link statically or dynamically depending on your choice, and compile everything with whatever options you desire.</p>
-
-			<p>everything should be a file</p>
-
-			<p>follow the unix philosphy to a t.</p>
-
-			<p><a>https://en.wikipedia.org/wiki/Worse_is_better</a></p>
-
-			<p>plan9 is the successor to unix.</p>
-
-			<p>never repeat yourself.</p>
-
-			<p>modern file system.</p>
-
-			<p>
-				the operating system should never choose for you, always give the user the choice, do not install a default shell or core utils let the user
-				pick their own.
-			</p>
-
-			<p>a adept computer user should be able to entirely understand their OS and change <italic>anything</italic></p>
-
-			<p>test driven development is a must.</p>
-
-			<p>packages should not be monolithic, have groups with subpackages for everything, looking at you gnu core utils.</p>
-
-			<p>any security migations should be taken, such as relinking the system software every shutdown.</p>
-
-			<p>tty's should be a first class citizen, in fact it should be the assumed default state.</p>
-
-			<p>everything should be as self contained as much as possible.</p>
-
-			<p>
-				the "stacking effect" is important, you should learn how to use programs and functions together,
-				even in ways that were never considered, vi and unix philosphy to the max.
-			</p>
-
-			<p>a text editor should edit text.</p>
-
-			<p>think different.</p>
-
-			<p><a>https://en.wikipedia.org/wiki/KISS_principle</a></p>
-
-			<p>an os should be as fast as possible within the other provided bounds.</p>
-
-			<p>embed devices should be a first class citizen not an afterthought.</p>
-
-			<p>the operating system should be fun.</p>
+			<p>Choice Driven. the operating system should be respectful of the users choice, and everything should be changible by an adept user.</p>
 		</section>
 
 		<section>
-			<h2>Alternative. Linux Distro Design.</h2>
+			<h2>Software that could be used for this</h2>
 
 			<a href="https://www.musl-libc.org/">Musl</a><p>
 				Provides a simple libc that can be statically linked.
 			</p>
 
-			<a href="https://www.busybox.net/">Busybox</a><p>
-				Provides simple and efficient core utils.<br>
-				Provides a simple, featured, efficient, shell.<br>
-				Provides a simple init system.
+			<a>Toybox</a><p>
+				Provides simple and efficient core utils, would probably be best to fork and add plan9 features as well as strip unneeded gnu features.
+			</p>
+		</section>
+
+		<section>
+			<h2>Software that is still needed for this</h2>
+
+			<a>Execute command as another user</a><p>
+				doas is probably okay, id rather implement a alternative in the Toybox fork however.
 			</p>
 
-			<a href="https://directory.fsf.org/wiki/Linux-libre">Linux Libre</a><p>
-				Entirely free software version of linux the kernel with the best driver support.
+			<a>C Compiler</a><p>
+				we possibly could use SCC, or 8CC it needs to be looked into.
 			</p>
 
-			<a href="https://archlinux.org/pacman/">Pacman</a><p>
-				Archs package manager, the best.
+			<a>Shell</a><p>
+				pdksh is an option but is not efficient enough imo, if busybox ash was standalone it would be perfect, maybe we can fix up Toybox sh.
 			</p>
 
-			<a href="https://github.com/Jguer/yay">Yay</a><p>
-				Basically a program for automated Ports for pacman.
+			<a>Kernel</a><p>
+				Linux and openbsd aren't microkernels and besides linux seems a bit too bloated, minix is outdated, gnu mach seems doesn't seem ready.
 			</p>
 
-			<a href="https://guix.gnu.org/">Guix (maybe an alternative to pacman</a><p>
-				package manager.
+			<a>Package Manager</a><p>
+				a simple source based package manager would be nice, portage seems bloated.
+			</p>
+
+			<a>Init System</a><p>
+				the perfect init system probably exist its just making the choice between openrc, s6, openbsd, toybox, etc.
 			</p>
 		</section>
 
