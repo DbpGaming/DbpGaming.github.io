@@ -2,7 +2,7 @@ body, nav a:hover, nav .slide:hover {
 	background-color: #282828;
 }
 
-a:link, a, h1, h2{
+a:link, a, h1, h2, li{
 	color: #cc241d;
 }
 
