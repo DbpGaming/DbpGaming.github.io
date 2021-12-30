@@ -8,7 +8,7 @@
 
 	<body>
 		<header>
-			<h1>Unix Software Guide</h1>
+			<h1>Unix Software Guide and Software I Use</h1>
 			<img src="../8.PNG" alt="banner">
 		</header>
 
@@ -18,12 +18,10 @@
 				<span>Technology</span>
 				<div class="slide-link">
 					<a href="../tech/websites.html">Cool Websites</a>
-					<a href="../tech/software.html">Software i Use</a>
 					<a href="../tech/linuxguide.html">Unix Software</a>
 					<a href="../tech/linuxgaming.html">Unix Gaming</a>
 					<a href="../tech/dev.html">Custom Software</a>
 					<a href="../tech/distros.html">Operating Systems</a>
-					<a href="../tech/technologies.html">Technologies</a>
 					<a href="../tech/vi.html">Smartutor</a>
 					<a href="../tech/config.html">Configuration</a>
 				</div>
@@ -40,9 +38,42 @@
 				</div>
 			</div>
 		</nav>
+		
+		<section>
+			<h2>Software i currently use on my artix install.</h2>
+			<a>Mksh</a><p>MirBSD Korn Shell statically linked with musl, great user shell, augmented with Busybox Ash</p>
+			<a>Dash</a><p>fast script execution</p>
+			<a>Doas</a><p>simple sudo replacement</p>
+			<a href="https://github.com/DbpGaming/sopen">sopen</a><p>script i made to replace xdg-open.</p>
+			<a href="https://github.com/DbpGaming/sf">sf</a><p>script i made to quickly open files.</p>
+			<a href="https://github.com/DbpGaming/sfm">sfm</a><p>terminal file manager i have my own fork of.</p>
+			<a href="https://github.com/DbpGaming/st">st</a><p>simple term emu, i forked.</p>
+			<a href="https://github.com/DbpGaming/sfeed">sfeed</a><p>simple rss feed fetcher.</p>
+			<a href="https://github.com/DbpGaming/dmenu">dmenu</a><p>simple menu for launching applications etc, have my own fork.</p>
+			<a>Links2</a><p>A lynx like Web browser.</p>
+			<a>Toybox VI</a><p>really simple vi clone with just enough features.</p>
+			<a>Toybox CP/MV/RM</a><p>simple basic commands.</p>
+			<a href="https://github.com/DbpGaming/dvtm">dvtm</a><p>A multiplexer inspired by DWM</p>
+			<a>BVI</a><p>Binary VI, VI like hex editor.</p>
+			<a>Htop</a><p>A process/task manager.</p>
+			<a href="https://github.com/DbpGaming/pfetch">pfetch</a><p>A simple system info Utility, forked.</p>
+			<a href="https://github.com/DbpGaming/promptless">promptless</a><p>simple posix script prompt, my own fork.</p>
+			<a>pick</a><p>Option selection.</p>
+			<a>Screenshooter</a><p>Screenshot tool, basically the same as Snipping Tool on windows</p>
+			<a>MPV</a><p>MPV is video and audio player forked from mplayer, can be used as a music player.</p>
+			<a href="https://github.com/DbpGaming/sxiv">SXIV</a><p>Simple X Image Viewer.</p>
+			<a>Zathura</a><p>Document Viewer, use mostly for manga.</p>
+			<a>7zFM</a><p>Peak File Archival Performance.</p>
+			<a>MultiMC</a><p>Minecraft Launcher, supports basically any modpack possible.</p>
+			<a>PPSSPP</a><p>Really accurate and featured PSP emulator.</p>
+			<a>Dolphin</a><p>Decently Accurate but not perfect, and insanely featured GCN/WII emulator.</p>
+			<a>Mupen64Plus</a><p>N64 emulator, minimal, supports plugins, use <a href="#gn64">GlideN64</a>.</p>
+		</section>
+		
+		<h1>Other Software and descriptions</h1>
 
 		<section>
-			<h2><a href="technologies.html#shell">Shells</a></h2>
+			<h2>Shells</h2>
 			<a name="busybox-ash">Busybox Ash</a><p>The remake of ash in Busybox lightweight and fast, as well as nearly as featured as oksh.</p>
 			<a name="toysh">Toybox Toysh</a><p>
 				The remake of bash in toybox lightweight and fast, lacking features like tab completion and colors,
@@ -67,86 +98,32 @@
 		</section>
 
 		<section>
-			<h2>System Level Software</h2>
+			<h2>System Level And Terminal Software</h2>
 			<a>SU Tricks</a><p>DoAS/Sudo can be replaced with a alias, <a href="config.html#su">how to alias su.</a></p>
 			<a name="doas">Doas</a><p>
 				Runs commands as another user, is super lightweight, great for single user pcs. also, <a href="config.html#doas">Conf Doas</a>.
 			</p>
-		</section>
-
-		<section>
-			<h2>Core Utils</h2>
-			<a>Busybox</a><p>lightweight core utils for embed and low resource systems.</p>
-			<a>GNU</a><p>free software core utils that are fast.</p>
-			<a>OpenBSD(lobase on linux)</a><p>core utils from the openbsd project which has a focus on correctness and security.</p>
-		</section>
-
-		<section>
-			<h2><a href="technologies.html#terminal">Terminal</a> Text Editors</h2>
+			<a>Toybox</a><p>lightweight core utils for embed and low resource systems.</p>
 			<a name="toybox-vi">Toybox VI</a><p>
 				Toybox verison of vi, slim but has some extra features that make it really nice. while also being lightweight,
-				way cleaner code than the busybox version but uses more memory.
+				way cleaner code than the busybox version.
 			</p>
-			<a name="busybox-vi">Busybox VI</a><p>Busybox verison of vi, slim but has some extra features that make it really nice. while also being lightweight.</p>
 			<a name="vis">Vis</a><p>A text editor inspired by Vi, Vim, and plan9 Sam, based around Structural Expressions.</p>
 			<a name="nano">Nano</a><p>A text editor essentially GNU notepad.</p>
 			<a name="mg">mg</a><p>Micro emacs.</p>
 			<a name="micro">Micro</a><p>A text editor essentially TUI sublime.</p>
-		</section>
-
-		<section>
-			<h2>Terminal Multiplexors/Session Management</h2>
 			<a name="dvtm">dvtm</a><p>A multiplexer inspired by DWM</p>
-			<a>mtm</a><p>A multiplexer</p>
-			<a name="adbuco">adbuco</a><p>A session manager.</p>
-		</section>
-
-		<section>
-			<h2>Prompts</h2>
 			<a>Promptless</a><p>posix shell script prompt thats easy to fork and implement into any shell.</p>
-		</section>
-
-		<section>
-			<h2><a href="technologies.html#terminal">Terminal</a> <a href="technologies.html#rss">RSS</a> Feed Readers</h2>
-			<a name="newsboat">Newsboat</a><p>A simple RSS feed reader, great for keeping up with News.</p>
 			<a name="sfeed">sfeed</a><p>A suckless RSS feed reader</p>
 			<a name="sfeedc">sfeed curses</a><p>A simple RSS feed reader.</p>
-		</section>
-
-	<!--
-		<section>
-			<h2><a href="technologies.html#terminal">Terminal</a> <a href="technologies.html#chat">Chat</a> Clients</h2>
-			<a name="gomuks">gomuks</a><p>A matrix client.</p>
-			<a name="sic">sic</a><p>A suckless/simple IRC client.</p>
-		</section>
-	-->
-
-		<section>
-			<h2><a href="technologies.html#terminal">Terminal</a> <a href="technologies.html#web">Web</a> Browsers</h2>
 			<a name="links">Links2</a><p>A lynx like Web browser.</p>
-			<a name="lynx">Lynx</a><p>A Web browser, it's considered the simpest.</p>
-			<a name="w3m">w3m</a><p>A Web browser only notable for supporting images in certain terminal emualtors.</p>
-		</section>
-
-		<section>
-			<h2>Basic <a href="technologies.html#terminal">Terminal</a> Applications</h2>
 			<a name="yay">Yay</a><p>Yay is a AUR helper, also note, you need sudo or, <a href="config.html#yaydoas">Yay with Doas</a></p>
 			<a name="sfm">sfm</a><p>A file manager.</p>
 			<a>Toybox Top</a><p>simple implementation of top, really nice.</p>
-			<a>Busybox Top</a><p>simple implementation of top, worse than toyboxes but still isn't horrile.</p>
 			<a name="htop">Htop</a><p>A process/task manager, really low resource and simple.</p>
 			<a name="pfetch">pfetch</a><p>A simple system info Utility, inspired by screenfetch.</p>
 			<a name="mpvcli">MPV</a><p><a href="#mpv">MPV</a> can be used as a music player, one of the best ones around.</p>
 			<a>BVI</a><p>Binary VI, VI like hex editor.</p>
-			<!--
-			<a name="btpd">btpd</a><p>bittorrent protocol daemon, can be used to torrent from the terminal</p>
-			<a>apvlv</a><p>PDF Viewer.</p>
-			-->
-		</section>
-
-
-		<section>
-			<h2>CLI Applications for non humans (programs for use in scripts)</h2>
 			<a name="herbe">herbe</a><p>A notification bubble without a daemon can be piped into from tiramisu</p>
 			<a name="pick" href="https://github.com/mptre/pick">pick</a><p>Option selection, think cli dmenu.</p>
 				<!--
@@ -157,15 +134,7 @@
 		</section>
 
 		<section>
-			<h2><a href="technologies.html#terminal">Terminal</a> Emulators</h2>
-			<a name="st">st</a><p>Suckless terminal, light weight, scales poorly, but highly modable, great for hobbists.</p>
-			<a href="https://github.com/majestrate/wterm">wterm</a><p>wayland terminal.</p>
-			<a name="lxterm">lxterminal</a><p>LXDE terminal, light weight and scales really well, also has tabs, transparency, etc.</p>
-			<a>kconsole</a>
-		</section>
-
-		<section>
-			<h2>X Window Managers</h2>
+			<h2>X Window Managers/Desktop Enviroments</h2>
 			<a>DWM</a><p>
 				Dynamic Window Manager, is the suckless tiling window manager, the most extensible and lightweight window manager.
 			</p>
@@ -175,62 +144,25 @@
 			<a>openbox</a><p>
 				really simple floating window manager.
 			</p>
-		</section>
-
-		<section>
-			<h2>Wayland Compositors</h2>
-			<a>DWL</a><p>
-				DWM for wayland, wayland is really early and there are not many programs that support it so use at your own risk.
-			</p>
-			<a>sway</a><p>
-				i3 for wayland, wayland is really early and there are not many programs that support it so use at your own risk.
-			</p>
-			<a>waybox</a><p>
-				waybox for wayland, wayland is really early and there are not many programs that support it so use at your own risk.
-			</p>
-		</section>
-
-		<section>
-			<h2>Desktop Enviroments</h2>
 			<a>xfce</a><p></p>
 			<a>lxde</a><p></p>
 			<a>lxqt</a><p></p>
 			<a>kde</a><p></p>
 		</section>
-
+		
 		<section>
-			<h2>Image Viewers</h2>
+			<h2>X Software</h2>
+			<a name="st">st</a><p>Suckless terminal, light weight, scales poorly, but highly modable, great for hobbists.</p>
 			<a name="sxiv">SXIV</a><p>Suckless X Image Viewer</p>
-			<a name="imv" href="https://github.com/exec64/imv">IMV</a><p>simple image viewer that works on both wayland and x.</p>
 			<a name="feh">Feh</a><p>Image Viewer.</p>
-			<a name="xfi">XFI</a><p>The builtin Image Viewer of <a href="#xfe">XFE</a></p>
-		</section>
-
-		<section>
-			<h2>Document/Book Readers</h2>
 			<a name="zathura">Zathura</a><p>Document Viewer, with modules for, cb(r/z), pdf, epub, djvu, and more.</p>
 			<a>MuPDF</a><p>PDF/EPUB/CBZ Reader</p>
-			<a>okular</a><p>kde document reader, works on wayland if necessary.</p>
-		</section>
-
-		<section>
-			<h2>GUI <a href="technologies.html#web">Web</a> Browsers</h2>
 			<a name="librewolf">LibreWolf</a><p>Web browser, A fork of FireFox focused around privacy</p>
-			<a name="icecat">Icecat</a><p>Web browser, GNU fork of FireFox rarely updated.</p>
 			<a name="chromium">Degoogled Chromium</a><p>Web browser, De-botneted Chromium</p>
 			<a name="surf">Surf</a><p>Suckless Web Browser</p>
-		</section>
-
-		<section>
-			<h2>GUI File Managers</h2>
-			<a name="xfe">XFE</a><p>Gui file manager styled around legacy design.</p>
 			<a name="thunar">Thunar</a><p>The Default XFCE file manager.</p>
 			<a>PCManFM</a><p>LXDE File Manager.</p>
-		</section>
-
-		<section>
-			<h2>Basic GUI Applications</h2>
-			<a name="thunderbird">Thunderbird</a><p>Advanced all in one <a href="technologies.html#email">email</a> client by mozilla.</p>
+			<a name="thunderbird">Thunderbird</a><p>Advanced all in one Email client by mozilla.</p>
 			<a name="pinta">Pinta</a><p>Paint.net clone.</p>
 			<a name="word">Abiword</a><p>Wordpad clone.</p>
 			<a name="leafpad">Leafpad</a><p>Notepad clone</p>
@@ -244,9 +176,9 @@
 			<a name="xfburn">XFBurn</a><p>XFCE ImgBurn, lightweight disc burning application</p>
 			<a name="quickmedia">Quickmedia</a><p>
 				Quickmedia is a native, keyboard controlled, app for youtube,
-				4chan, soundcloud, <a href="technologies.html#matrix">matrix</a>, and more.
+				4chan, soundcloud, matrix, and more.
 			</p>
-			<a name="nheko">Nheko</a><p><a href="technologies.html#matrix">matrix</a> Client</p>
+			<a name="nheko">Nheko</a><p>matrix Client</p>
 			<a name="kcalc">kcalc</a><p>KDE Calculator.</p>
 			<a name="kchar">kcharselect</a><p>KDE Character Select.</p>
 		</section>
@@ -260,7 +192,7 @@
 
 		<section>
 			<h2>Emulators</h2>
-			<a name="dosemu">dosemu2</a><p>Dos Emulator, can be ran in your <a href="technologies.html#terminal">terminal</a> and other special things, sometimes useful.</p>
+			<a name="dosemu">dosemu2</a><p>Dos Emulator, can be ran in your Terminal and other special things, sometimes useful.</p>
 			<a name="doxbox">doxboxx</a><p>DosBox but actually accurate, can run windows 98 and basically any games.</p>
 			<a name="wine">WineGE</a><p>Windows compatiblity layer, has backports from proton, and other fixes by GE.</p>
 			<a name="anbox">Anbox</a><p>Android in a box, abusing the fact android uses Linux</p>
@@ -282,13 +214,6 @@
 				Multisystem emulator, supports a ton of consoles while also being minimal
 				it includes a ps1, nes, gb, gbc, gba, a bsnes based snes emulator, and more.
 			</p>
-			<a name="duckstation">Duckstation</a><p>
-				PS1 emulator with widescreen hacks, high resolution support, and a ton of other,
-				neat things. not that minimal.
-			</p>
-			<a name="mgba">MGBA</a><p>GBA emu.</p>
-			<a name="bsnes">BSNES</a><p>A highly featured and accurate SNES emulator.</p>
-			<a name="mesen">Mesen</a><p>A highly featured NES Emulator</p>
 		</section>
 
 		<footer>

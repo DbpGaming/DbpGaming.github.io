@@ -19,12 +19,10 @@
 				<span>Technology</span>
 				<div class="slide-link">
 					<a href="../tech/websites.html">Cool Websites</a>
-					<a href="../tech/software.html">Software i Use</a>
 					<a href="../tech/linuxguide.html">Unix Software</a>
 					<a href="../tech/linuxgaming.html">Unix Gaming</a>
 					<a href="../tech/dev.html">Custom Software</a>
 					<a href="../tech/distros.html">Operating Systems</a>
-					<a href="../tech/technologies.html">Technologies</a>
 					<a href="../tech/vi.html">Smartutor</a>
 					<a href="../tech/config.html">Configuration</a>
 				</div>
@@ -103,6 +101,96 @@
 				<a href="#artix">Artix</a> has isos for a variety of different desktop enviroments,
 				you can think of this exactly like <a href="#endeavos">EndeavorOS</a> with a Artix base and slightly
 				different defaults.
+			</p>
+		</section>
+		
+		<h1>If i made my own os/distro</h1>
+		
+		<section>
+			<h2>Simple. Correct. Extensible. And Choice Driven</h2>
+			<p>Write up on how i think operating systems should be designed, sort of tired of the current systems we have.</p>
+			<p>Simple. a operating system should be simple, a low line count auditable codebase, but also low memory usage.</p>
+			<p>Correct. do it right, or not at all, do not half ass implement bluetooth drivers to drive the userbase up.</p>
+			<p>Portable. every part of the OS should be a tool that can be used in conjunction with others, portable to other systems and usable with other software ecosystems.</p>
+			<p>Choice Driven. the operating system should be respectful of the users choice, and everything should be changible by an adept user.</p>
+		</section>
+
+		<section>
+			<h2>Software that could be used for this</h2>
+			<a>???</a><p>
+				minix was one of the first microkernels and one of the inspirations for linux, ideally we'd have something more updated,
+				but if this is our only choice it's not too bad.
+
+				a secondary kernel option would be freebsd which has good driver support compared to minix.
+			</p>
+
+			<a href="https://www.musl-libc.org/">Musl</a><p>
+				Provides a simple libc that can be statically linked, would probably have to be modified over its linux dependance
+			</p>
+
+			<a>Dash</a><p>
+				really simple posix shell, a bit bloated on memory usage, busybox ash is better, hopefully toysh can be fixed up and replace it
+			</p>
+
+			<a>Toybox</a><p>
+				Provides simple and efficient core utils, would probably be best to fork and add plan9 features as well as strip unneeded gnu features,
+				maybe use sbase instead and port toybox things to it.
+			</p>
+			
+			<a>Shell</a><p>
+				the shell should be a mix of toysh, busybox ash, dash, oksh, and rc, keep the code as minimal as possible with the best scripting features and posix compliance.
+			</p>
+
+			<a>Doas</a><p>
+				runs a program as another user, probably should be replaced by a program added in forked toybox.
+			</p>
+
+			<a>runit</a><p>
+				super simple and fast init system. maybe use sinit to augment.
+			</p>
+
+			<a href="https://sr.ht/~mcf/cproc/">cproc</a><p>
+				simple qbe frontend c compiler.
+			</p>
+
+			<a href="https://git.2f30.org/smdev/file/README.html">smdev</a><p>
+				suckless mdev.
+			</p>
+			
+			<a href="https://git.2f30.org/scron/file/README.html">scron</a><p>
+				simple crond.
+			</p>
+
+			<a href="https://www.libressl.org/">LibreSSL</a><p>
+				openssl but less bad. maybe look at bearssl
+			</p>
+
+			<a href="http://smarden.org/socklog/">socklog</a><p>
+				system and kernel logging services.
+			</p>
+			
+			<a href="https://github.com/michaelforney/samurai">samurai</a><p>
+				ninja compatible build system in pure c99.
+			</p>
+
+			<a href="https://www.pkgsrc.org/">pkgsrc</a><p>
+				a really simple yet featured and featured package management system, supports both source and binary.
+			</p>
+
+			<a href="https://github.com/C-Chads/tinygl">Tiny-GL</a><p>
+				software graphics library.
+			</p>
+			
+			<a href="https://github.com/sabotage-linux/netbsd-curses">netbsd-curses</a><p>
+				smaller than ncurses though software should start depending on things like termbox instead.
+			</p>
+			
+			<a href="https://sortix.org/libz/">libz</a><p>
+				zlib fork.
+			</p>
+			
+			<a href="https://mandoc.bsd.lv/">mandoc</a><p>
+				man pages
 			</p>
 		</section>
 
