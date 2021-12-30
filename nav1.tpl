@@ -10,6 +10,7 @@
 					<a href="../tech/dev.html">Custom Software</a>
 					<a href="../tech/distros.html">Operating Systems</a>
 					<a href="../tech/technologies.html">Technologies</a>
+					<a href="../tech/vi.html">Smartutor</a>
 					<a href="../tech/config.html">Configuration</a>
 				</div>
 			</div>
