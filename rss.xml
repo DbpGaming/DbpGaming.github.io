@@ -9,6 +9,17 @@
 <atom:link href="https://dbpgaming.github.io/rss/xml" rel="self" type="application/rss+xml"/>
 
 <item>
+<title>RSS feed launch?</title>
+<guid>https://dbpgaming.github.io/rss/xml</guid>
+<link>https://dbpgaming.github.io/rss/xml</link>
+<description>
+this should be the launch of my rss feed, currently i manually am editing
+the xml file, i hope to provide site updates via this, but i'm afraid i'll trigger regrabbing
+in certain rss feed readers.
+</description>
+</item>
+
+<item>
 <title>The Fall of Minecraft Modpacks</title>
 <guid>https://dbpgaming.github.io/posts/tfom.html</guid>
 <link>https://dbpgaming.github.io/posts/tfom.html</link>
