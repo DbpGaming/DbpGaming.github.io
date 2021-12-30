@@ -10,7 +10,7 @@
 	<body>
 		<header>
 			<h1>pagename</h1>
-			<img src="8.PNG" alt="banner">
+			<img src="img/index.png" alt="banner">
 		</header>
 
 		<nav>

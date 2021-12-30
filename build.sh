@@ -2,9 +2,9 @@ FILES0="*.html"
 FILES1="*/*.html"
 TMP0="tmp"
 TMP1="../tmp"
-FOOTER=$(sed -z 's/\n/\\n/g' < footer.tpl)
-NAV0=$(sed -z 's/\n/\\n/g' < nav.tpl)
-NAV1=$(sed -z 's/\n/\\n/g' < nav1.tpl)
+FOOTER=$(sed -z 's/\n/\\n/g' < tpl/footer.tpl)
+NAV0=$(sed -z 's/\n/\\n/g' < tpl/nav.tpl)
+NAV1=$(sed -z 's/\n/\\n/g' < tpl/nav1.tpl)
 
 for FILE in $FILES0
 do
