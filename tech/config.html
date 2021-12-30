@@ -22,6 +22,7 @@
 					<a href="../tech/software.html">Software i Use</a>
 					<a href="../tech/os.html">OS Ideas/Design</a>
 					<a href="../tech/linuxguide.html">Unix Software</a>
+					<a href="../tech/linuxgaming.html">Unix Gaming</a>
 					<a href="../tech/dev.html">Custom Software</a>
 					<a href="../tech/distros.html">Operating Systems</a>
 					<a href="../tech/technologies.html">Technologies</a>
@@ -78,6 +79,13 @@
 				You can add the <code>ParalellDownloads</code> option to your <code>/etc/pacman.conf</code> to allow parallel
 				downloading, i recommend setting this to your processor threads, for example on my system i added.
 				<code>ParalellDownloads = 6</code>
+				
+				also if you need to enable multilib
+				uncomment
+				<br><code>
+					[multilib]<br>
+					Include = /etc/pacman.d/mirrorlist
+				</code>
 			</p>
 			<a name="su">Alias SU</a><p>
 				add <code>alias sudo su root -c</code> and/or <code>alias doas su root -c</code> to your shells .shrc.

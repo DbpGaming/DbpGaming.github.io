@@ -9,6 +9,15 @@
 <atom:link href="https://dbpgaming.github.io/rss/xml" rel="self" type="application/rss+xml"/>
 
 <item>
+<title>New Page: Gaming on Unix</title>
+<guid>https://dbpgaming.github.io/tech/linuxgaming.html</guid>
+<link>https://dbpgaming.github.io/tech/linuxgaming.html</link>
+<description>
+this is a new guide for gaming on unix, there is some todo sections but there is a lot here already.
+</description>
+</item>
+
+<item>
 <title>RSS feed launch?</title>
 <guid>https://dbpgaming.github.io/rss/xml</guid>
 <link>https://dbpgaming.github.io/rss/xml</link>
