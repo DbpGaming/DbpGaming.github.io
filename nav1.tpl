@@ -28,6 +28,4 @@
 					<a href="../media/youtube.html">Cool Videos</a>
 				</div>
 			</div>
-			<a href="../minecraft.html">Minecraft</a>
-			<a href="../posts.html">Posts</a>
 		</nav>
