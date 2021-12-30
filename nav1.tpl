@@ -1,19 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-	<head>
-		<title>DbpGaming's Website</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="../styles.css">
-	</head>
-
-	<body>
-		<header>
-			<h1>Weebshit/Light Novels</h1>
-			<img src="../8.PNG" alt="banner">
-		</header>
-
-		<nav>
+<nav>
 			<a href="../index.html">Index</a>
 			<div class="slide">
 				<span>Technology</span>
@@ -44,15 +29,3 @@
 			<a href="../minecraft.html">Minecraft</a>
 			<a href="../posts.html">Posts</a>
 		</nav>
-
-		<section>
-			<h2>TODO Section</h2>
-			<a>danganronpa 0(LN)</a><br>
-		</section>
-
-		<footer>
-			<a href="https://github.com/DbpGaming/DbpGaming.github.io">source</a>
-			<a href="https://matrix.to/#/!YWYwNTMNgcHyIUyAcJ:matrix.org?via=matrix.org">matrix</a>
-		</footer>
-	</body>
-</html>
