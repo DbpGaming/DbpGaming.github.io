@@ -9,9 +9,27 @@
 <atom:link href="https://dbpgaming.github.io/rss/xml" rel="self" type="application/rss+xml"/>
 
 <item>
+<title>New Page: Tale of Two Wastelands - Guide</title>
+<guid>https://dbpgaming.github.io/gaming/linuxgaming.html</guid>
+<link>https://dbpgaming.github.io/gaming/linuxgaming.html</link>
+<description>
+this is a new guide for installing ttw, more specifically on linux.
+</description>
+</item>
+
+<item>
+<title>Minor update: mupen64plus tutorial updated</title>
+<guid>mupen64plusgliden64</guid>
+<link>https://dbpgaming.github.io/gaming/linuxgaming.html</link>
+<description>
+updated mupen64plus tutorial to include how to install gliden64 on arch.
+</description>
+</item>
+
+<item>
 <title>New Page: Gaming on Unix</title>
 <guid>https://dbpgaming.github.io/tech/linuxgaming.html</guid>
-<link>https://dbpgaming.github.io/tech/linuxgaming.html</link>
+<link>https://dbpgaming.github.io/gaming/linuxgaming.html</link>
 <description>
 this is a new guide for gaming on unix, there is some todo sections but there is a lot here already.
 </description>
