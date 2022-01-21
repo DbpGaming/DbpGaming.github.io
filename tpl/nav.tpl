@@ -1,5 +1,5 @@
 <nav>
-			<a href="index">Index</a>
+			<a href="/">Index</a>
 			<div class="slide">
 				<span>Technology</span>
 				<div class="slide-link">
