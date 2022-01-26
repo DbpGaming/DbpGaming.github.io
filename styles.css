@@ -78,7 +78,7 @@ nav{
     padding: 10px;
 }
 
-section, h1, img {
+section, h1{
 	max-width: 1024px;
 	margin: auto;
 }
