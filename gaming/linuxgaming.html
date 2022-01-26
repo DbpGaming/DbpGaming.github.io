@@ -104,38 +104,33 @@
 		</section>
 		
 		<section>
-			<h2>Wine</h2>
-			
-			<p>
+			<h2>Wine</h2><p>
 				this section covers running pc games in wine, and what tweaks may need to be done in order
 				to get certain games or sets of games running.
-			</p>
-			
-			<p>
+			</p><p>
 				enable <a href="config#pacman">multilib</a> then run
 				<br><code>pacman -S wine wine-mono winetricks lib32-alsa-plugins lib32-libpulse lib32-openal</code><br>
 				<a href="https://wiki.archlinux.org/title/Vulkan">install the 64bit and 32bit vulkan drivers for your system.</a>
 				use winetricks to install dxvk <code>winetricks dxvk</code>
-			</p>
-			
-			<p>
+			</p><p>
 				with the installation above most games should now run, lets fix a few that won't
 			</p>
 			
-			<h3>Trinoline</h3>
-			
-			<p>
+			<h3>Trinoline</h3><p>
 				turn of special effects in the settings to prevent a crash
 			</p>
 			
-			<h3>Fate / Stay Night</h3>
+			<h3>Fate / Stay Night</h3><p>turn on skip movies to prevent a crash</p>
 			
-			<p>turn on skip movies to prevent a crash</p>
-			
-			<h3>Unity fix</h3>
-			
-			<p>
+			<h3>Unity fix</h3><p>
 				run in a virtual desktop fullscreened or when you tab out all inputs won't work
+			</p>
+
+			<h3>Dracu Riot and other japanaese locale games</h3><p>
+				edit <code>/etc/locale.gen</code> and uncomment
+				<br><kbd>ja_JP.EUC-JP EUC-JP<br> ja_JP.UTF-8 UTF-8</kbd><br>
+				run <code>locale-gen</code> as root.
+				then use <code>LANG="ja_JP" wine dracuriot.exe</code> in the game directory.
 			</p>
 			
 			<h3>List of games that work in wine</h3>
@@ -148,6 +143,8 @@
 			<h3>List of vns that work in wine</h3>
 			<li>air</li>
 			<li>aokana Extra (use unity fix)</li>
+			<li>a sky full of star? (only tested in proton)</li>
+			<li>a sky full of stars fine days</li>
 			<li>atri</li>
 			<li>chronoclock</li>
 			<li>clannad</li>
@@ -165,6 +162,7 @@
 			<li>hapymaher</li>
 			<li>idol magical girl chiru chiru michiru</li>
 			<li>idol magical girl chiru chiru michiru 2</li>
+			<li>if my heart had wings (without the restoration patch)</li>
 			<li>island</li>
 			<li>kanon</li>
 			<li>kinkoi golden loveriche (use unity fix)</li>
@@ -183,13 +181,11 @@
 			<li>tomoyo after</li>
 			<li>trinoline</li>
 			<li>yukikoi melt</li>
+			<li>dracu riot(use above fix)</li>
 			
 			<h3>List of games that don't work in wine</h3>
-			<li>if my heart had wings</li>
-			<li>dracu riot</li>
-			<li>doom 3 bfg</li>
+			
 			<li>Making Lovers</li>
-			<li>a sky full of stars fine days (some routes crash)</li>
 			<li>newton and the apple tree (crashes midway on multiple routes)</li>
 			<li>nanario reincarnation (crashes before you can get to the first route)</li>
 		</section>
@@ -217,6 +213,10 @@
 			<h3>Tomb Raider (1-5)</h3>
 			<p>opentomb allows you to play tomb raider 1-5 on linux</p>
 			<p>todo: opentomb tutorial</p>
+
+			<h3><a href="https://github.com/RobertBeckebans/RBDOOM-3-BFG">RBDOOM-3-BFG</a></h3><p>
+				play doom 3 bfg including doom 1 and doom 2 on linx.
+			</p><p>todo: rbdoom tutorial.</p>
 		</section>
 		
 		<section>
