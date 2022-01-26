@@ -1,4 +1,4 @@
-		<header>
+<header>
 			<a href="../" class="logo">#</a>
 			<input class="side-menu" type="checkbox" id="side-menu"/>
 			<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
@@ -20,4 +20,5 @@
 					<li><a href="../media/youtube">Cool Videos</a></li>
 				</ul>
 			</nav>
-			<img
+		</header>
+		<img
