@@ -16,8 +16,6 @@
 				<ul class="menu">
 					<li><a href="../tech/websites">Cool Websites</a></li>
 					<li><a href="../tech/linuxguide">Unix Software</a></li>
-					<li><a href="../tech/dev">Custom Software</a></li>
-					<li><a href="../tech/distros">Operating Systems</a></li>
 					<li><a href="../tech/vi">Smartutor</a></li>
 					<li><a href="../tech/config">Configuration</a></li>
 					<li><a href="../gaming/visualnovels">Visual Novels</a></li>
@@ -34,7 +32,7 @@
 		<img src="../img/index.png" alt="banner">
 
 		<section>
-			<h2>Posix Operating Systems</h2>
+			<h2>Operating Systems</h2>
 			<a name="alpine">Alpine Linux</a><p>
 				A lot like arch linux, uses busybox, musl, and openrc by default extremely lightweight great for low resource machines.
 				also has a installer a lot like openbsds, really a great mix between arch and openbsd.
@@ -44,56 +42,25 @@
 				Unix philosphy, it's extremely hard to get working on a desktop and drivers are lacking, but if it works go
 				for it, it's atleast as good as FreeBSD in most cases
 			</p>
-			<a name="FreeBSD" href="https://www.freebsd.org/"><b2>FreeBSD</b2></a><p>
-				A posix/unix like operating system, much like Gnu/linux but is based on the berkely source
-				distribution, it's generally way smaller than Linux and Gnu as far as development but it's powerful in it's
-				own way, it uses openrc as it's init system, it's way closer to posix compliant than Gnu, and offers a
-				variety of applications, a way better userland, plus you won't be screwed into using ALSA or pulseaudio.
-				if you're a power user and Linux isn't enough for you, it's really worth a shot.
-			<a name="arch">Arch Linux</a><p>
-				One of the most versatile linux distributions around. it doesn't have a graphical user
+			<a name="artix">Artix</a><p>
+				A fork ofoOne of the most versatile linux distributions around. it doesn't have a graphical user
 				enviroment by default, however it is easy to install one,
 				and it being a barebones system allows you to customize it way beyond most other distros.
 				not to mention, the AUR allows you to find basically anything you can dream of in terms of software.
-				it has a more difficult learning curve, but is well rounded.
+				it has a more difficult learning curve, but is well rounded, without systemd,
+				it also has releases with desktop enviroments preinstalled.
 			</p>
-			<a name="artix">Artix</a><p>
-				A fork of <a href="#arch">Arch</a> without systemd, all the same good shit,
-				minus the bloatware that is systemd. it has openrc, runit,
-				and s6 versions, it also has releases with desktop enviroments preinstalled,
-				which is covered below
-			</p>
-			<a name="gentoo">Gentoo</a><p>
+			<a name="void">Void linux</a><p>
 				Another barebones and minimal linux distribution like Arch.
-				it's designed around building as much of your software as possible
-				from source, allowing for even more customization and efficency over distros like Arch,
-				it also uses openrc as it's init system so you don't have to worry about systemd.
+				there is a musl version which is way lighter weight than glibc,
+				also uses the runit init system which is way faster.
 			</p>
-		</section>
-
-
-		<section>
 			<a name="9front" href="http://9front.org/"><b2>9Front</b2></a><p>
-				A fork of <a href="#plan9">Plan9</a> with additional development including but not limited to more hardware
-				support, nes/snes/gb/gbc/md emulators, the Constitution of the United States, The Manifesto of the Commmunist Party,
-				and a whole lot more, just generally the updated version of Plan9, a lot of the dev's worked on the original aswell.
-			</p>
-			<a name="plan9">Plan9</a><p>
 				A Utilitarian operating system from the same group who created Unix, in a lot of ways it is essentially
 				Unix2, it focuses on simplicity and reusablity like original Unix but pushes it into a graphical era.
-			</p>
-		</section>
-
-		<section>
-			<h2>Linux Distributions with a Desktop Enviroment</h2>
-			<a name="endeavos">EndeavorOS</a><p>
-				EndeavorOS is a arch based linux distro with preinstalled desktop enviroments, xfce, lxqt,
-				i3wm, etc, if you want arch but can't be bothered with installing the DE yourself this is for you.
-			</p>
-			<a name="artixgui">Artix</a><p>
-				<a href="#artix">Artix</a> has isos for a variety of different desktop enviroments,
-				you can think of this exactly like <a href="#endeavos">EndeavorOS</a> with a Artix base and slightly
-				different defaults.
+				forked later with additional development including but not limited to more hardware
+				support, nes/snes/gb/gbc/md emulators, the Constitution of the United States, The Manifesto of the Commmunist Party,
+				and a whole lot more, just generally the updated version of Plan9, a lot of the dev's worked on the original aswell.
 			</p>
 		</section>
 		

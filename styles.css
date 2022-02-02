@@ -76,7 +76,7 @@ nav{
 }
 
 .menu a{
-    padding: 10px;
+    padding: 15px;
 }
 
 section, h1{
@@ -105,7 +105,7 @@ header{
 .hamb{
     cursor: pointer;
     float: right;
-    padding: 18px 10px;
+    padding: 20px 10px;
 }
 
 .hamb-line {

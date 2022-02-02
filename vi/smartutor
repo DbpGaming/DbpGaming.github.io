@@ -3,7 +3,7 @@ ________________________________________________________________________________
 |                          Smartutor VI taught right                           |
 |______________________________________________________________________________|
 
-VI stands for VIsual editor that focuses on changing different types of 
+VI stands for VIsual editor that focuses on chaining different types of 
 commands together, this tutorial plans to teach you basic vi. but all of this
 works in vim and vis, anything that doesn't work in basic vi implementations
 will be noted.
@@ -91,9 +91,9 @@ if you press the a key you will enter insert mode after the character you had
 selected, you can essentially type like a normal editor in insert mode press
 esc to exit.
 
-if you press the i key you will insert before the character you had selected.
+if you press i you will be in insert mode before the character you had selected.
 
-if you press o you will be on insert mode on a new line below your cursor.
+if you press o you will be in insert mode on a new line below your cursor.
 
 if you press A you will be in insert mode at the end of a line.
 
@@ -122,7 +122,7 @@ ________________________________________________________________________________
 
 y lets you put a line in your register without deleting it.
 yw yanks a word.
-yy yands a line.
+yy yanks a line.
 works with all your basic motions.
 ________________________________________________________________________________
 
