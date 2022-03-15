@@ -153,7 +153,7 @@ header{
 }
 
 /* minimum 768 */
-@media (min-width: 1080px) {
+@media (min-width: 1300px) {
     nav{
         max-height: none;
         top: 0;
